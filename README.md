@@ -103,3 +103,26 @@ A partir daí, tem-se uma versão!
 ![commit](img\commit.png)
 
 Pode ser visto um código que é **ÚNICO**, a quantidade de arquivos modificados e em qual *branch* foi adicionada.
+
+
+
+
+
+### Git Log
+
+Através do comando `log` podemos obter informações de todos os `commits`. Informações como hash, data, autor, branch, descrição e etc.
+
+- `git log`: Descreve todos os `commits` em ordem mais recente.
+- `git log --author="ellison"`: Busca os `commits` específicos desse autor.
+- `git log --graph`: Mostra de forma gráfica o caminho dos `commits` e se houve desvio/branch.
+- `git show 589984561dsadsa694a`: Informando a hash verifica-se mais informações do `commit`.
+
+
+
+Exemplos:
+
+![log1](img\log1.png)
+
+e o `log show hash`:
+
+![log2](img\log2.png)
