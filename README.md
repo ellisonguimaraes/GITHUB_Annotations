@@ -126,3 +126,43 @@ Exemplos:
 e o `log show hash`:
 
 ![log2](img\log2.png)
+
+
+
+
+
+### Git Diff
+
+Parecido com o `log show hash`, porém, o `log show` é utilizado para arquivos já comitados. Já o `git diff` é usado para verificar quais arquivos que foram modificados antes de dar um `commit`.
+
+![gitdiff](img\gitdiff.png)
+
+
+
+O `git diff --name-only` mostra somente o nome dos arquivos modificados.
+
+
+
+
+
+### Git Checkout
+
+Caso você tenha editado um arquivo que ainda não tenha feito `git add` e queira recuperar o arquivo anterior, basta da um `git checkout nomearquivo.md`.
+
+E se já tiver dado o `add` ou o `commit`? Use o:
+
+
+
+### Git Reset
+
+O comando `git reset HEAD README.md`, tira do processo de `add` e retorna para o `modified`, onde pode ser modificado ou aplicado o `git checkout nomearquivo.md` para tirar toda a mudança feita.
+
+
+
+**E se já estiver comitado?**
+
+No reset, existem 3 tipos de variações:
+
+- `--soft`: Vai matar o `commit` mas as modificações estará em `stated` para ser  comitado novamente.
+- `--mixed`: O mesmo que o de cima, porém, vai retornar para **modified**.
+- `--hard`: Mata e ignora as modificações.
