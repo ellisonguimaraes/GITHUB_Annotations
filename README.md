@@ -288,7 +288,7 @@ Assim que temos um *branch* e queremos aplicar as alterações ao *branch* princ
 
 Quando se tem uma *branch* e a escolha de juntar a master é através do Merge: O merge cria um novo *commit* com a junção do *branch* com o *master*.
 
-![merge](img\merge.png)
+![merge](https://user-images.githubusercontent.com/27094833/62168238-70c4ec80-b2fb-11e9-80fa-07b418671296.png)
 
 
 
@@ -306,11 +306,11 @@ git merge NomeBranch
 
 O *rebase* aplica todas as mudanças a frente da pilha, ou seja: 
 
-![rebase1](img\rebase1.png)
+![rebase1](https://user-images.githubusercontent.com/27094833/62168239-70c4ec80-b2fb-11e9-8e15-64298b4c4258.png)
 
 O *branch* criado é adicionado ao final da fila e o *master* aponta para o final da pilha novamente:
 
-![rebase2](img\rebase2.png)
+![rebase2](https://user-images.githubusercontent.com/27094833/62168237-70c4ec80-b2fb-11e9-8b03-0ee4ac4f5a74.png)
 
 
 
