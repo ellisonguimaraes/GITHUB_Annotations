@@ -274,3 +274,49 @@ Para excluir uma *branch*, é utilizado o código `git branch -D NomeBranch`:
 
 ![branchdelete](https://user-images.githubusercontent.com/27094833/62162076-d611e100-b2ed-11e9-9156-452a166b77c4.png)
 
+
+
+
+
+## Merge & Rebase
+
+Assim que temos um *branch* e queremos aplicar as alterações ao *branch* principal (master). Existem **duas** formas de fazer isso, via **Merge** e via **Rebase**.
+
+
+
+### Merge
+
+Quando se tem uma *branch* e a escolha de juntar a master é através do Merge: O merge cria um novo *commit* com a junção do *branch* com o *master*.
+
+![merge](img\merge.png)
+
+
+
+Na *branch master* acione o comando:
+
+```shell
+git merge NomeBranch
+```
+
+
+
+
+
+### Rebase
+
+O *rebase* aplica todas as mudanças a frente da pilha, ou seja: 
+
+![rebase1](img\rebase1.png)
+
+O *branch* criado é adicionado ao final da fila e o *master* aponta para o final da pilha novamente:
+
+![rebase2](img\rebase2.png)
+
+
+
+Na *branch master* acione o comando:
+
+```shell
+git rebase NomeBranch
+```
+
