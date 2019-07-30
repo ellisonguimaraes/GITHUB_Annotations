@@ -166,3 +166,112 @@ No reset, existem 3 tipos de variações:
 - `--soft`: Vai matar o `commit` mas as modificações estará em `stated` para ser  comitado novamente.
 - `--mixed`: O mesmo que o de cima, porém, vai retornar para **modified**.
 - `--hard`: Mata e ignora as modificações.
+
+
+
+Um pequeno exemplo com `git reset --hard hash`:
+
+![reset](img\reset.png)
+
+
+
+Podemos observar através do `git log` que existe um `commit` de nome "**return**" e o intuito é voltar para a "**finals**". Para isso, aplicamos o `git reset --hard 55cd878668a723dd573a49660396ddcec949157b ` e voltamos para o `commit` desejado:
+
+
+
+![reset2](img\reset2.png)
+
+
+
+
+
+# Repositórios Remotos
+
+Agora que já temos nosso repositório criado precisamos jogar o repositório no GitHub. Para isso, iremos criar uma novo repositório no GitHub. Após ter criado, iremos pegar o key HTTPS ou SSH e executar o comando:
+
+```shell
+git remote add origin https://github.com/ellisonguimaraes/GitHub-Notes.git
+```
+
+O comando acima liga a pasta ao repositório no GitHub, mas ainda é necessário fazer um push para que os arquivos subam pro GitHub:
+
+```shell
+git push -u origin master
+```
+
+Logo após, o código estará disponível no GitHub.
+
+> O `-u` na instrução *push*, é somente para indicar que é para que não precise escrever mais o restante depois do `-u`. Das próximas vezes somente é necessário da `git push`.
+
+> Nos comandos, a palavra **origin** aparece frequentemente. `origin` é uma referência aos dados contidos no GitHub. 
+>
+> No `git remote add origin https://gith.....` atribui o repositório á palavra chave `origin`. E no push, siginifica que é para passar do branch master local para o origin(servidor).
+
+> O comando `git remote` lista todas as palavras chaves com referência do GitHub.
+
+
+
+## Push
+
+Para fazer um *Push*, não é necessário colocar o `-u` como foi mencionado acima. A instrução será: 
+
+```shell
+git push origin master
+```
+
+Ou seja, irá mandar do branch *master* para o *origin*.
+
+
+
+## Clone
+
+Para clonar um repositório, acesse a key HTTPS ou SSH e execute:
+
+```shell
+git clone git@github.com:ellisonguimaraes/GitHub-Notes.git
+```
+
+
+
+
+
+
+
+# Branch
+
+## Criando
+
+Para criar um branch, utiliza-se o comando:
+
+```shell
+git checkout -b NomeBranch
+```
+
+Ao executar esse comando a *branch* é criada e muda da *brench* atual para a *branch* criada.
+
+> Usando o comando `git branch` ele lista os *branch's* daquele repositório.
+
+![branch](img\branch.png)
+
+Podemos observar que foi trocada a *branch* na hora da criação, e que listando, podemos ver todas as *branch's* disponíveis.
+
+
+
+## Acessando as branch's
+
+Para mudar de *branch*, usa-se o comando `git checkout NomeBranch`:
+
+![branchmov](img\branchmov.png)
+
+Foi observado que foi mudado a *branch*.
+
+
+
+
+
+## Excluindo
+
+Para excluir uma *branch*, é utilizado o código `git branch -D NomeBranch`:
+
+![branchdelete](img\branchdelete.png)
+
