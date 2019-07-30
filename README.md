@@ -238,6 +238,10 @@ git clone git@github.com:ellisonguimaraes/GitHub-Notes.git
 
 # Branch
 
+![branching](img/branching.png)
+
+
+
 ## Criando
 
 Para criar um branch, utiliza-se o comando:
@@ -320,3 +324,18 @@ Na *branch master* acione o comando:
 git rebase NomeBranch
 ```
 
+
+
+
+
+## .gitignore
+
+O `.gitignore` é um arquivo que fica dentro da pasta raiz. Dentro dela adicionamos arquivos que não queremos que vá para o GitHub no *commit*.
+
+Por exemplo:
+
+![gitignore](img/gitignore.png)
+
+No exemplo acima, temos na pasta dois arquivos `.db` e criamos um `.gitignore` com o `*.db`, ou seja, todos os arquivos com extensões `.db` não vão ser inclusos no *commit*. Logo abaixo poderá ver que ao dar um **add** os arquivos são ignorados.
+
+Se quiser somente barrar um arquivo específico, é só especificar o nome dele. Por exemplo, `cliente.db`.
