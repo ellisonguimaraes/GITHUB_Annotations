@@ -39,7 +39,7 @@ git init
 
 Se você der um `ls -la`, verá que foi criado um diretório oculto chamado ***.git***.
 
-![gitpaste](img\gitpaste.png)
+![gitpaste](https://user-images.githubusercontent.com/27094833/62162081-d6aa7780-b2ed-11e9-9954-028661792fb5.png)
 
 
 
@@ -53,7 +53,7 @@ Através desse comando `git status`, é possível ver quais sãos os estados dos
 
 
 
-![status](img\status.png)
+![status](https://user-images.githubusercontent.com/27094833/62162086-d7430e00-b2ed-11e9-8a58-a0d45be3b825.png)
 
 
 
@@ -66,7 +66,7 @@ Através desse comando `git status`, é possível ver quais sãos os estados dos
 
 Na imagem a seguir podemos verificar dois dos estados:
 
-![status2](img\status2.png)
+![status2](https://user-images.githubusercontent.com/27094833/62162088-d7430e00-b2ed-11e9-845c-1d2a1d1ed349.png)
 
 
 
@@ -100,7 +100,7 @@ git commit -m "Mensagem de especificação"
 
 A partir daí, tem-se uma versão!
 
-![commit](img\commit.png)
+![commit](https://user-images.githubusercontent.com/27094833/62162079-d611e100-b2ed-11e9-81b9-313c1ed4bebf.png)
 
 Pode ser visto um código que é **ÚNICO**, a quantidade de arquivos modificados e em qual *branch* foi adicionada.
 
@@ -121,11 +121,11 @@ Através do comando `log` podemos obter informações de todos os `commits`. Inf
 
 Exemplos:
 
-![log1](img\log1.png)
+![log1](https://user-images.githubusercontent.com/27094833/62162082-d6aa7780-b2ed-11e9-9823-ff3486e8c03b.png)
 
 e o `log show hash`:
 
-![log2](img\log2.png)
+![log2](https://user-images.githubusercontent.com/27094833/62162083-d6aa7780-b2ed-11e9-94f7-c0fa1a437fd9.png)
 
 
 
@@ -135,8 +135,7 @@ e o `log show hash`:
 
 Parecido com o `log show hash`, porém, o `log show` é utilizado para arquivos já comitados. Já o `git diff` é usado para verificar quais arquivos que foram modificados antes de dar um `commit`.
 
-![gitdiff](img\gitdiff.png)
-
+![gitdiff](https://user-images.githubusercontent.com/27094833/62162080-d611e100-b2ed-11e9-9833-4ea3eddf3b7b.png)
 
 
 O `git diff --name-only` mostra somente o nome dos arquivos modificados.
@@ -171,7 +170,7 @@ No reset, existem 3 tipos de variações:
 
 Um pequeno exemplo com `git reset --hard hash`:
 
-![reset](img\reset.png)
+![reset](https://user-images.githubusercontent.com/27094833/62162084-d6aa7780-b2ed-11e9-82b4-d182e52e8e77.png)
 
 
 
@@ -179,7 +178,7 @@ Podemos observar através do `git log` que existe um `commit` de nome "**return*
 
 
 
-![reset2](img\reset2.png)
+![reset2](https://user-images.githubusercontent.com/27094833/62162085-d6aa7780-b2ed-11e9-8324-75177205626b.png)
 
 
 
@@ -251,7 +250,7 @@ Ao executar esse comando a *branch* é criada e muda da *brench* atual para a *b
 
 > Usando o comando `git branch` ele lista os *branch's* daquele repositório.
 
-![branch](img\branch.png)
+![branch](https://user-images.githubusercontent.com/27094833/62162075-d5794a80-b2ed-11e9-8643-fd00c03a4c43.png)
 
 Podemos observar que foi trocada a *branch* na hora da criação, e que listando, podemos ver todas as *branch's* disponíveis.
 
@@ -261,7 +260,7 @@ Podemos observar que foi trocada a *branch* na hora da criação, e que listando
 
 Para mudar de *branch*, usa-se o comando `git checkout NomeBranch`:
 
-![branchmov](img\branchmov.png)
+![branchmov](https://user-images.githubusercontent.com/27094833/62162078-d611e100-b2ed-11e9-9fd8-389e1f165c7f.png)
 
 Foi observado que foi mudado a *branch*.
 
@@ -273,5 +272,5 @@ Foi observado que foi mudado a *branch*.
 
 Para excluir uma *branch*, é utilizado o código `git branch -D NomeBranch`:
 
-![branchdelete](img\branchdelete.png)
+![branchdelete](https://user-images.githubusercontent.com/27094833/62162076-d611e100-b2ed-11e9-9156-452a166b77c4.png)
 
